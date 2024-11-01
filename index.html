@@ -12,7 +12,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-   @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
     :root {
@@ -31,26 +31,26 @@
       box-sizing: border-box;
     }
 
-    p{
+    p {
       font-size: 14px;
       font-family: "Montserrat";
     }
 
     header {
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--Dark-cyan);
-    height: 60px;
-  }
+      display: flex;
+      justify-content: space-between;
+      background-color: var(--Dark-cyan);
+      height: 60px;
+    }
 
-    .logo{
+    .logo {
       font-family: "Fraunces";
       font-size: 18px;
       margin: 20px 0px 0px 20px;
-      
+
     }
 
-    .logo a{
+    .logo a {
       text-decoration: none;
       color: var(--White);
     }
@@ -66,17 +66,17 @@
       margin: 50px auto;
     }
 
-    .left img{
+    .left img {
       width: 300px;
       height: 470px;
-      border-radius:10px 0px 0px 10px ;
+      border-radius: 10px 0px 0px 10px;
     }
 
-    .right{
+    .right {
       padding: 2em;
     }
 
-    .first-title{
+    .first-title {
       font-family: "Montserrat";
       color: var(--Dark-grayish-blue);
       font-size: 20px;
@@ -84,8 +84,8 @@
       opacity: 0.8;
     }
 
-    .second-title{
-      font-family:"Fraunces";
+    .second-title {
+      font-family: "Fraunces";
       font-size: 36px;
       padding: 0.5em;
       color: var(--Very-dark-blue);
@@ -93,44 +93,44 @@
       margin-left: -0.5em;
     }
 
-    .paragraph{
-      font-family:"Montserrat";
+    .paragraph {
+      font-family: "Montserrat";
       margin-top: 6px;
       color: var(--Dark-grayish-blue);
     }
 
-    .prince{
+    .prince {
       display: flex;
       justify-content: space-evenly;
       margin-left: -4em;
       margin-top: 1em;
     }
 
-    .big-price{
+    .big-price {
       font-family: "Fraunces";
       font-size: 40px;
       color: var(--Dark-cyan);
     }
 
-    .small-price{
+    .small-price {
       font-family: "Fraunces";
       font-size: 14px;
       font-weight: 500;
-      text-decoration:line-through;
+      text-decoration: line-through;
       margin-left: -4em;
       margin-top: 1em;
       color: var(--Dark-grayish-blue);
     }
 
-    .btn-continue{
+    .btn-continue {
       width: 100%;
       height: 40px;
       border: none;
       border-radius: 10px;
-      background-color:var(--Dark-cyan);
+      background-color: var(--Dark-cyan);
       font-family: "Montserrat";
       color: var(--Cream);
-      justify-content:center;
+      justify-content: center;
       display: flex;
       font-weight: 700;
       text-align: center;
@@ -139,20 +139,20 @@
       text-decoration: none;
     }
 
-    .btn-continue:hover{
+    .btn-continue:hover {
       background-color: hsl(158, 37%, 24%);
       transform: scale(0.98);
     }
 
-    .btn-continue:active{
+    .btn-continue:active {
       border: 3px solid hsla(0, 0%, 0%, 0.212);
     }
 
-    .btn-continue img{
+    .btn-continue img {
       margin-right: 2em;
     }
 
-    .name{
+    .name {
       font-family: "Montserrat";
       font-size: 12px;
       bottom: 2px;
@@ -161,57 +161,89 @@
       justify-content: center;
     }
 
-    span{
-    transition: 0.5s;
-  }
+    span {
+      transition: 0.5s;
+    }
 
-  .logo:hover span{
-    color: #000000;
-    transition: 0.5s;
-  }
+    .logo:hover span {
+      color: #000000;
+      transition: 0.5s;
+    }
 
-  @media (max-width:400px) {
-    header {
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--Dark-cyan);
-    height: 60px;
-    width: 650px;
-  }
+    @media (max-width:400px) {
+      header {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--Dark-cyan);
+        height: 60px;
+        width: 502px;
+      }
 
-  .container_base {
-    width: 550px;
-    height: 410px;
-    margin: 200px 50px;
-  }
-  .left img{
-    height: 410px;
-  }
+      .container_base {
+        width: 350px;
+        height: 700px;
+        margin-left: 5em;
+        display: inline-block;
+        /* ou use 'display: block' */
+        box-shadow: 9px 10px 36px -3px rgba(0, 0, 0, 0.42);
+        -webkit-box-shadow: 9px 10px 36px -3px rgba(0, 0, 0, 0.42);
+        -moz-box-shadow: 9px 10px 36px -3px rgba(0, 0, 0, 0.42);
+      }
 
-  .name{
-    margin-left: 1em;
-    bottom: -37em;
-  }
+      .left img {
+        height: 400px;
+        width: 350px;
+        border-radius: 10px 10px 0px 0px;
+      }
 
-  .second-title{
-    font-size: 26px;
-  }
+      .name {
+        margin-left: 1em;
+        bottom: -37em;
+      }
 
-  .big-price{
-    font-size: 30px;
-    margin-left: 2em;  
-  }
+      .first-title{
+        margin-left: -6em;
+        margin-top: -1em;
+      }
 
-  .small-price{
-    margin-left: 1em;
-    margin-top: 0.8em;
-  }
-  }
+      .second-title {
+        font-size: 26px;
+        margin-left: -5em;
+        margin-top: 0.1em;
+      }
+
+      .big-price {
+        font-size: 30px;
+        margin-left: -3em;
+      }
+
+      .small-price {
+        margin-left: -2em;
+        margin-top: 0.8em;
+      }
+
+      .paragraph{
+        font-size: 12px;
+        margin-left: -9em;
+        margin-top: -0.5em;
+      }
+
+      .right {
+        margin-left: 6em;
+      }
+
+      .btn-continue{
+        width: 100%;
+        margin-left: -3em;
+        margin-top: 1em;
+      }
+    }
   </style>
 </head>
 
 <header>
-  <h1 class="logo"><a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer"> <span>Frontend</span>|Mentor </a></h1>
+  <h1 class="logo"><a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">
+      <span>Frontend</span>|Mentor </a></h1>
 </header>
 
 <body>
@@ -227,14 +259,18 @@
         <h2 class="first-title">Perfume</h2>
         <h1 class="second-title">Gabrielle Essence Eau De parfum</h1>
 
-        <p class="paragraph">A floral, solar and voluptuous interpratation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+        <p class="paragraph">A floral, solar and voluptuous interpratation composed by Olivier Polge, Perfumer-Creator
+          for the House of CHANEL.</p>
 
         <div class="prince">
           <h2 class="big-price">$149.99</h2>
           <h3 class="small-price">$169.99</h3>
         </div>
 
-        <a href="./cart.html" target="_blank" rel="noopener noreferrer" class="btn-continue"><img src="./images/icon-cart.svg"> <p>Add to Cart</p></a>
+        <a href="./cart.html" target="_blank" rel="noopener noreferrer" class="btn-continue"><img
+            src="./images/icon-cart.svg">
+          <p>Add to Cart</p>
+        </a>
       </div>
     </div>
   </div>
