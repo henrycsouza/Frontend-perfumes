@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+    :root {
+      --Very-dark-blue: hsl(212, 21%, 14%);
+      --Dark-grayish-blue: hsl(228, 12%, 48%);
+      --White: hsl(0, 0%, 100%);
+
+      --Dark-cyan: hsl(158, 36%, 37%);
+      --Cream: hsl(30, 38%, 92%);
+    }
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    p{
+      font-size: 14px;
+      font-family: "Montserrat";
+    }
+
+    header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Dark-cyan);
+    height: 60px;
+  }
+
+    .logo{
+      font-family: "Fraunces";
+      font-size: 18px;
+      margin: 20px 0px 0px 20px;
+      
+    }
+
+    .logo a{
+      text-decoration: none;
+      color: var(--White);
+    }
+
+    .container_base {
+      width: 650px;
+      height: 470px;
+      border-radius: 10px;
+      display: flex;
+      box-shadow: 9px 10px 36px -3px rgba(0, 0, 0, 0.42);
+      -webkit-box-shadow: 9px 10px 36px -3px rgba(0, 0, 0, 0.42);
+      -moz-box-shadow: 9px 10px 36px -3px rgba(0, 0, 0, 0.42);
+      margin: 50px auto;
+    }
+
+    .left img{
+      width: 300px;
+      height: 470px;
+      border-radius:10px 0px 0px 10px ;
+    }
+
+    .right{
+      padding: 2em;
+    }
+
+    .first-title{
+      font-family: "Montserrat";
+      color: var(--Dark-grayish-blue);
+      font-size: 20px;
+      font-weight: 500;
+      opacity: 0.8;
+    }
+
+    .second-title{
+      font-family:"Fraunces";
+      font-size: 36px;
+      padding: 0.5em;
+      color: var(--Very-dark-blue);
+      margin-top: 1px;
+      margin-left: -0.5em;
+    }
+
+    .paragraph{
+      font-family:"Montserrat";
+      margin-top: 6px;
+      color: var(--Dark-grayish-blue);
+    }
+
+    .prince{
+      display: flex;
+      justify-content: space-evenly;
+      margin-left: -4em;
+      margin-top: 1em;
+    }
+
+    .big-price{
+      font-family: "Fraunces";
+      font-size: 40px;
+      color: var(--Dark-cyan);
+    }
+
+    .small-price{
+      font-family: "Fraunces";
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration:line-through;
+      margin-left: -4em;
+      margin-top: 1em;
+      color: var(--Dark-grayish-blue);
+    }
+
+    .btn-continue{
+      width: 100%;
+      height: 40px;
+      border: none;
+      border-radius: 10px;
+      background-color:var(--Dark-cyan);
+      font-family: "Montserrat";
+      color: var(--Cream);
+      justify-content:center;
+      display: flex;
+      font-weight: 700;
+      text-align: center;
+      padding: 0.8em;
+      margin-top: 2em;
+      text-decoration: none;
+    }
+
+    .btn-continue:hover{
+      background-color: hsl(158, 37%, 24%);
+      transform: scale(0.98);
+    }
+
+    .btn-continue:active{
+      border: 3px solid hsla(0, 0%, 0%, 0.212);
+    }
+
+    .btn-continue img{
+      margin-right: 2em;
+    }
+
+    .name{
+      font-family: "Montserrat";
+      font-size: 12px;
+      bottom: 2px;
+      position: absolute;
+      text-align: center;
+      justify-content: center;
+    }
+
+    span{
+    transition: 0.5s;
+  }
+
+  .logo:hover span{
+    color: #000000;
+    transition: 0.5s;
+  }
+
+  @media (max-width:400px) {
+    header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Dark-cyan);
+    height: 60px;
+    width: 650px;
+  }
+
+  .container_base {
+    width: 550px;
+    height: 410px;
+    margin: 200px 50px;
+  }
+  .left img{
+    height: 410px;
+  }
+
+  .name{
+    margin-left: 1em;
+    bottom: -37em;
+  }
+
+  .second-title{
+    font-size: 26px;
+  }
+
+  .big-price{
+    font-size: 30px;
+    margin-left: 2em;  
+  }
+
+  .small-price{
+    margin-left: 1em;
+    margin-top: 0.8em;
+  }
+  }
+  </style>
+</head>
+
+<header>
+  <h1 class="logo"><a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer"> <span>Frontend</span>|Mentor </a></h1>
+</header>
+
+<body>
+
+
+  <div class="container">
+    <div class="container_base">
+      <div class="left">
+        <img src="./images/image-product-desktop.jpg" alt="Perfume Gabrielle Chanel">
+      </div>
+
+      <div class="right">
+        <h2 class="first-title">Perfume</h2>
+        <h1 class="second-title">Gabrielle Essence Eau De parfum</h1>
+
+        <p class="paragraph">A floral, solar and voluptuous interpratation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+
+        <div class="prince">
+          <h2 class="big-price">$149.99</h2>
+          <h3 class="small-price">$169.99</h3>
+        </div>
+
+        <a href="./cart.html" target="_blank" rel="noopener noreferrer" class="btn-continue"><img src="./images/icon-cart.svg"> <p>Add to Cart</p></a>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="name">@HenrySouza</h3>
+</body>
+
+</html>
